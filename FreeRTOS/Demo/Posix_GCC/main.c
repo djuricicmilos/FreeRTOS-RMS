@@ -75,6 +75,7 @@
 
 #define    BLINKY_DEMO    0
 #define    FULL_DEMO      1
+#define    RMS_DEMO       2
 
 #ifdef BUILD_DIR
     #define BUILD         BUILD_DIR
