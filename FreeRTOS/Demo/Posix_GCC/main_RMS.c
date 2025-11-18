@@ -72,7 +72,7 @@ void main_RMS(void)
 {
     // 1. Inicijalizacija zadataka
     Task_Params taskSet[] = {
-        {"Z1", pdMS_TO_TICKS(1000),  pdMS_TO_TICKS(3000), 0, xTaskGetTickCount(), 0},
+        {"Z1", pdMS_TO_TICKS(500),  pdMS_TO_TICKS(3000), 0, xTaskGetTickCount(), 0},
         {"Z2", pdMS_TO_TICKS(1000), pdMS_TO_TICKS(4000), 0, xTaskGetTickCount(), 0},
         {"Z3", pdMS_TO_TICKS(2000), pdMS_TO_TICKS(6000), 0, xTaskGetTickCount(), 0}
     };
@@ -101,4 +101,5 @@ void main_RMS(void)
  
     // 4. Pokretanje schedulera
     vTaskStartScheduler();
+
 }
