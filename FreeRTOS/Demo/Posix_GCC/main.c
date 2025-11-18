@@ -89,12 +89,15 @@
     #define    mainSELECTED_APPLICATION     FULL_DEMO
 #endif
 
+#define mainSELECTED_APPLICATION RMS_DEMO
+
 /* This demo uses heap_3.c (the libc provided malloc() and free()). */
 
 /*-----------------------------------------------------------*/
 
 extern void main_blinky( void );
 extern void main_full( void );
+extern void main_RMS(void);
 static void traceOnEnter( void );
 
 /*
@@ -178,6 +181,10 @@ int main( void )
     {
         console_print( "Starting full demo\n" );
         main_full();
+    }
+    #elif ( mainSELECTED_APPLICATION == RMS_DEMO )
+    {
+        main_RMS();
     }
     #else
     {
