@@ -14,11 +14,11 @@ In addition to this, either enable [Developer Mode](https://docs.microsoft.com/e
 
 To clone using HTTPS:
 ```
-git clone https://github.com/djuricicmilos/FreeRTOS---Rate-Monotonic-Scheduling.git --recurse-submodules
+git clone https://github.com/djuricicmilos/FreeRTOS-RMS.git --recurse-submodules
 ```
 Using SSH:
 ```
-git clone git@github.com/djuricicmilos/FreeRTOS---Rate-Monotonic-Scheduling --recurse-submodules
+git clone https://github.com/djuricicmilos/FreeRTOS-RMS.git --recurse-submodules
 ```
 
 If you have downloaded the repo without using the `--recurse-submodules` argument, you need to run:
